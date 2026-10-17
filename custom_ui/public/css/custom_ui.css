@@ -1,11 +1,12 @@
 /* 
  * Custom UI - Wide Items Child Table Customization
- * Scoped strictly to Purchase Invoice and Sales Invoice forms.
+ * Scoped to Purchase Invoice, Sales Invoice, and Delivery Note forms.
  */
 
-/* Override default page max-width (900px) on Purchase & Sales Invoice forms */
+/* Override default page max-width (900px) on Purchase & Sales Invoice & Delivery Note forms */
 body[data-route^="Form/Purchase Invoice"],
 body[data-route^="Form/Sales Invoice"],
+body[data-route^="Form/Delivery Note"],
 body.custom-wide-items-form {
 	--page-max-width: 100%;
 }
@@ -13,6 +14,7 @@ body.custom-wide-items-form {
 /* Allow main layout container to span available horizontal space */
 body[data-route^="Form/Purchase Invoice"] .layout-main,
 body[data-route^="Form/Sales Invoice"] .layout-main,
+body[data-route^="Form/Delivery Note"] .layout-main,
 body.custom-wide-items-form .layout-main {
 	max-width: 100% !important;
 }
@@ -22,6 +24,8 @@ body[data-route^="Form/Purchase Invoice"] .std-form-layout .section-head,
 body[data-route^="Form/Purchase Invoice"] .std-form-layout .section-body,
 body[data-route^="Form/Sales Invoice"] .std-form-layout .section-head,
 body[data-route^="Form/Sales Invoice"] .std-form-layout .section-body,
+body[data-route^="Form/Delivery Note"] .std-form-layout .section-head,
+body[data-route^="Form/Delivery Note"] .std-form-layout .section-body,
 body.custom-wide-items-form .std-form-layout .section-head,
 body.custom-wide-items-form .std-form-layout .section-body {
 	max-width: 100% !important;
@@ -30,6 +34,7 @@ body.custom-wide-items-form .std-form-layout .section-body {
 /* Ensure the Items child table control and grid container use 100% width */
 body[data-route^="Form/Purchase Invoice"] .frappe-control[data-fieldname="items"],
 body[data-route^="Form/Sales Invoice"] .frappe-control[data-fieldname="items"],
+body[data-route^="Form/Delivery Note"] .frappe-control[data-fieldname="items"],
 body.custom-wide-items-form .frappe-control[data-fieldname="items"] {
 	width: 100% !important;
 	max-width: 100% !important;
@@ -37,6 +42,7 @@ body.custom-wide-items-form .frappe-control[data-fieldname="items"] {
 
 body[data-route^="Form/Purchase Invoice"] .form-grid-container,
 body[data-route^="Form/Sales Invoice"] .form-grid-container,
+body[data-route^="Form/Delivery Note"] .form-grid-container,
 body.custom-wide-items-form .form-grid-container {
 	width: 100% !important;
 	max-width: 100% !important;
@@ -45,6 +51,7 @@ body.custom-wide-items-form .form-grid-container {
 
 body[data-route^="Form/Purchase Invoice"] .form-grid,
 body[data-route^="Form/Sales Invoice"] .form-grid,
+body[data-route^="Form/Delivery Note"] .form-grid,
 body.custom-wide-items-form .form-grid {
 	width: 100% !important;
 	max-width: 100% !important;

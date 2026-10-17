@@ -6,7 +6,7 @@ custom_ui.setup_wide_layout = function () {
 		if (
 			route &&
 			route[0] === "Form" &&
-			(route[1] === "Purchase Invoice" || route[1] === "Sales Invoice")
+			(route[1] === "Purchase Invoice" || route[1] === "Sales Invoice" || route[1] === "Delivery Note")
 		) {
 			$(document.body).addClass("custom-wide-items-form");
 		} else {
