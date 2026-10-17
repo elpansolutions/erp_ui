@@ -8,14 +8,16 @@ body[data-route^="Form/Purchase Invoice"],
 body[data-route^="Form/Sales Invoice"],
 body[data-route^="Form/Delivery Note"],
 body.custom-wide-items-form {
-	--page-max-width: 100%;
+	--page-max-width: 100% !important;
 }
 
 /* Allow main layout container to span available horizontal space */
 body[data-route^="Form/Purchase Invoice"] .layout-main,
 body[data-route^="Form/Sales Invoice"] .layout-main,
 body[data-route^="Form/Delivery Note"] .layout-main,
-body.custom-wide-items-form .layout-main {
+body.custom-wide-items-form .layout-main,
+body.custom-wide-items-form .layout-main-section,
+body.custom-wide-items-form .page-container {
 	max-width: 100% !important;
 }
 
