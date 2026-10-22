@@ -6,11 +6,11 @@ custom_ui.setup_wide_layout = function () {
 		if (
 			route &&
 			route[0] === "Form" &&
-			(route[1] === "Purchase Invoice" || route[1] === "Sales Invoice" || route[1] === "Delivery Note")
+			(route[1] === "Purchase Invoice" || route[1] === "Sales Invoice" || route[1] === "Delivery Note" || route[1] === "Purchase Receipt")
 		) {
 			return true;
 		}
-		if (window.cur_frm && (cur_frm.doctype === "Purchase Invoice" || cur_frm.doctype === "Sales Invoice" || cur_frm.doctype === "Delivery Note")) {
+		if (window.cur_frm && (cur_frm.doctype === "Purchase Invoice" || cur_frm.doctype === "Sales Invoice" || cur_frm.doctype === "Delivery Note" || cur_frm.doctype === "Purchase Receipt")) {
 			return true;
 		}
 		return false;

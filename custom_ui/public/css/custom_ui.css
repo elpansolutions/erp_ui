@@ -7,6 +7,7 @@
 body[data-route^="Form/Purchase Invoice"],
 body[data-route^="Form/Sales Invoice"],
 body[data-route^="Form/Delivery Note"],
+body[data-route^="Form/Purchase Receipt"],
 body.custom-wide-items-form {
 	--page-max-width: 100% !important;
 }
@@ -15,6 +16,7 @@ body.custom-wide-items-form {
 body[data-route^="Form/Purchase Invoice"] .layout-main,
 body[data-route^="Form/Sales Invoice"] .layout-main,
 body[data-route^="Form/Delivery Note"] .layout-main,
+body[data-route^="Form/Purchase Receipt"] .layout-main,
 body.custom-wide-items-form .layout-main,
 body.custom-wide-items-form .layout-main-section,
 body.custom-wide-items-form .page-container {
@@ -28,6 +30,8 @@ body[data-route^="Form/Sales Invoice"] .std-form-layout .section-head,
 body[data-route^="Form/Sales Invoice"] .std-form-layout .section-body,
 body[data-route^="Form/Delivery Note"] .std-form-layout .section-head,
 body[data-route^="Form/Delivery Note"] .std-form-layout .section-body,
+body[data-route^="Form/Purchase Receipt"] .std-form-layout .section-head,
+body[data-route^="Form/Purchase Receipt"] .std-form-layout .section-body,
 body.custom-wide-items-form .std-form-layout .section-head,
 body.custom-wide-items-form .std-form-layout .section-body {
 	max-width: 100% !important;
@@ -37,6 +41,7 @@ body.custom-wide-items-form .std-form-layout .section-body {
 body[data-route^="Form/Purchase Invoice"] .frappe-control[data-fieldname="items"],
 body[data-route^="Form/Sales Invoice"] .frappe-control[data-fieldname="items"],
 body[data-route^="Form/Delivery Note"] .frappe-control[data-fieldname="items"],
+body[data-route^="Form/Purchase Receipt"] .frappe-control[data-fieldname="items"],
 body.custom-wide-items-form .frappe-control[data-fieldname="items"] {
 	width: 100% !important;
 	max-width: 100% !important;
@@ -45,6 +50,7 @@ body.custom-wide-items-form .frappe-control[data-fieldname="items"] {
 body[data-route^="Form/Purchase Invoice"] .form-grid-container,
 body[data-route^="Form/Sales Invoice"] .form-grid-container,
 body[data-route^="Form/Delivery Note"] .form-grid-container,
+body[data-route^="Form/Purchase Receipt"] .form-grid-container,
 body.custom-wide-items-form .form-grid-container {
 	width: 100% !important;
 	max-width: 100% !important;
@@ -54,6 +60,7 @@ body.custom-wide-items-form .form-grid-container {
 body[data-route^="Form/Purchase Invoice"] .form-grid,
 body[data-route^="Form/Sales Invoice"] .form-grid,
 body[data-route^="Form/Delivery Note"] .form-grid,
+body[data-route^="Form/Purchase Receipt"] .form-grid,
 body.custom-wide-items-form .form-grid {
 	width: 100% !important;
 	max-width: 100% !important;
